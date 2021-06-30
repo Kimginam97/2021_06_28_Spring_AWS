@@ -26,7 +26,7 @@ public class PostsRepositoryTest {
         String title = "테스트 게시글";
         String content = "테스트 본문";
 
-        postsRepository.save(Posts.builder()//save는 insert,update쿼릴르 실행
+        postsRepository.save(Posts.builder()//save는 insert,update쿼리를 실행
                 .title(title)
                 .content(content)
                 .author("jojoldu@gmail.com")
