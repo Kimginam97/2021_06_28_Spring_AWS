@@ -16,10 +16,10 @@ public class Posts {
     private Long id;
 
     //테이블의 칼럼을 나타내며 선언하지 않아도 됨
-    @Column(length = 500, nullable = false)//길이가 500,타입은 TEXT
+    @Column(length = 500, nullable = false)//길이가 500,not null
     private String title;
 
-    @Column(columnDefinition = "TEXT", nullable = false)
+    @Column(columnDefinition = "TEXT", nullable = false)//타입은 TEXT,not null
     private String content;
 
     private String author;
